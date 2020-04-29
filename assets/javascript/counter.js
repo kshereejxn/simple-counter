@@ -27,4 +27,16 @@ incrementButton.addEventListener("click", function() {
 // Use the console.log function to display some text in the console when the button is clicked:
 decrementButton.addEventListener("click", function() {
     console.log("- button clicked");
+
+// Calculate the new value for our counter (note the subtraction operator):
+let newCounterValue = parseInt(counter.innerHTML) - 1;
+
+// If the counter drops below 10, change the text color to black:
+if(newCounterValue < 10){
+    counter.style.color = "black";}
+
+// Only update the counter value on the screen if the counter is > 0:
+if (counter.innerHTML > 0) {
+    counter.innerHTML = newCounterValue;
+  }
   })
