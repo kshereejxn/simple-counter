@@ -22,3 +22,9 @@ incrementButton.addEventListener("click", function() {
   // Calculate the new value for our counter:
   counter.innerHTML = newCounterValue;
 })
+
+// This is the "event listener" for clicking the button.
+// Use the console.log function to display some text in the console when the button is clicked:
+decrementButton.addEventListener("click", function() {
+    console.log("- button clicked");
+  })
